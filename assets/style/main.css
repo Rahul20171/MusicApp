@@ -1,0 +1,182 @@
+body{
+    background: cornflowerblue;
+}
+*{
+    box-sizing: border-box;
+}
+.w-100{
+    width: 100%;
+}
+.h-100{
+    height: 100%;
+}
+/* ---------------- */
+img{
+    width: 100%;
+    height: 100%;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+#product_list li{
+    /* width: 280px; */
+    margin: 5px;
+    /* flex-grow: 1; */
+    cursor: pointer;
+    /* overflow-x: hidden; */
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    margin-right: 5px;
+}
+/* @media(max-width:992px){
+    #product_list li{
+        width: 48%;
+    }
+}
+@media(max-width:768px){
+    #product_list li{
+        width: 48%;
+    }
+}
+@media(min-width:768px){
+    #product_list li{
+        width: 48%;
+    }
+} */
+@media(min-width:1200px){
+    #product_list li{
+        width: 32%;
+    }
+}
+@media(max-width:1200px){
+    #product_list li{
+        width: 48%;
+    }
+}
+@media(max-width:992px){
+    #product_list li{
+        width: 48%;
+    }
+}
+@media(max-width:768px){
+    #product_list li{
+        width: 46%;
+    }
+}
+@media(max-width:576px){
+    #product_list li{
+        width: 100%;
+    }
+}
+#product_list li .bottom{
+    display: flex;
+    justify-content: space-between;
+    /* flex-grow: 1; */
+}
+#product_list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#product_list li .img_div{
+    width: 100%;
+    /* height: 130px; */
+    /* position: relative; */
+}
+
+/* img -------hover effect------------- */
+#product_list li .img_box{
+    overflow: hidden;
+}
+#product_list li .img_div{
+    position: relative;
+}
+#product_list li .img_div::before{
+    /* display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    transform: translate(100% , -100%);
+    transition: 1.5s;
+    background-color: rgba(0, 0, 0, 0.5); */
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    transform: translate(100% , -100%);
+    background-color: rgba(0, 0, 0, 0.3);
+}
+#product_list li .img_div::after{
+    /* content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    transform: translate(-200% , 100%);
+    transition: 1.5s;
+    background-color: rgba(0, 0, 0, 0.5); */
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    transform: translate(-200% , 100%);
+    background-color: rgba(0, 0, 0, 0.3);
+}
+#product_list li .img_box:hover .img_div::before{
+    transform: translate(0%,0%);
+    transition: 1.5s;
+    opacity: 0;
+}
+#product_list li .img_box:hover .img_div::after{
+    transform: translate(-100%,0%);
+    transition: 1.5s;
+    opacity: 0;
+}
+/* --------img ---------hover effect end----------- */
+
+#product_list li .img_div img{
+    width: 100%;
+    height: 250px;
+}
+#product_list li h3{
+    /* text-transform: uppercase; */
+    padding: 12px;
+    font-size: 22px;
+    color: #000;
+    text-align: center;
+}
+
+
+nav #added_product{
+   display: flex;
+   flex-wrap: wrap;
+}
+nav #added_product li{
+    width:90%;
+    margin: 0px auto;
+    padding: 10px 6px 10px 6px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid gray;
+    box-shadow: 0px 3px 12px #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav #added_product li .img_div {
+    width: 80px;
+}
+nav #added_product li .img_div img{
+    width: 100%;
+}
+nav #added_product li h2{
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #000;
+}
+nav #added_product li button{
+    width: 15%;
+    /* height: 10%; */
+}
