@@ -1,0 +1,43 @@
+body{
+    background-image: url("https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/v462-n-130-textureidea_1.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=9465282a2b0a375f4f5b120d7bbad882");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+h1{
+    text-align: center;
+    color: thistle;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-top: 70px;
+}
+table{
+    /* width: 50%; */
+    margin: 80px auto;
+    border: 3px solid wheat;
+    height: 300px;
+    border-radius: 20px;
+    border-radius: 20px;
+}
+table input[type="text"]{
+   width: 98%;
+   height: 40px;
+   text-align: right;
+   font-size: 24px;
+   background-color: black;
+   color: gainsboro;
+}
+
+.btn{
+    width: 100px;
+    height: 40px;
+    background-color: crimson;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.btn:hover{
+    border: 5px solid #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* color: #000; */
+}
+
